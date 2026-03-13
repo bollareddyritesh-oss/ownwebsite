@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Login</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+
+function validateLogin(){
+
+let user=document.getElementById("username").value
+let pass=document.getElementById("password").value
+
+if(user=="" || pass=="")
+{
+alert("Enter username and password")
+return false
+}
+
+else
+{
+alert("Login Successful")
+return true
+}
+
+}
+
+</script>
+
+</head>
+
+<body>
+    <style>
+        img{
+width: 100%;
+height: 100vh;  
+background-attachment: fixed;
+        }
+    </style>
+
+<div class="login-box">
+
+<h2>Login</h2>
+
+<form onsubmit="return validateLogin()">
+
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+
+
+</form>
+
+</div>
+
+</body>
+
+</html>
